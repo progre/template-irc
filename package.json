@@ -1,4 +1,5 @@
 {
+  "name": "template-irc",
   "repository": {
     "type": "git",
     "url": "https://github.com/progre/template-irc"
@@ -6,19 +7,21 @@
   "private": true,
   "main": "app/index.js",
   "scripts": {
-    "test": "gulp"
+    "test": "gulp",
+    "install-windows-service": "winser -i",
+    "uninstall-windows-service": "winser -r"
   },
   "dependencies": {
     "es6-promise": "^1.0.0",
     "irc": "^0.3.7",
     "linq": "~3.0.4-beta",
     "log4js": "~0.6.13",
-    "source-map-support": "~0.2.5"
+    "source-map-support": "~0.2.5",
+    "winser": "^1.0.0"
   },
   "devDependencies": {
     "event-stream": "^3.1.7",
     "gulp": "^3.8.8",
-    "gulp-clean": "^0.3.1",
     "gulp-tsd": "0.0.3",
     "gulp-typescript": "^2.0.0",
     "node-dev": "^2.4.0",
